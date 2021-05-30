@@ -45,7 +45,6 @@ export const FormGroup = styled.div`
 
 export const Div = styled.div`
   margin-right: 0.8rem;
-  width: ${props => (props.width ? props.width : 'auto')};
 `
 
 export const Label = styled.label`
