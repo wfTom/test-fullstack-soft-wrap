@@ -22,7 +22,8 @@ function Register() {
           <div>
             <Form>
               <FormGroup>
-                <Div width="100%">
+                <Div>
+                   {/* width="100%"> */}
                   <Label htmlFor="name">Nome</Label>
                   <Input
                     id="name"
