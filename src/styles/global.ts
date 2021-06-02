@@ -15,6 +15,7 @@ export default createGlobalStyle`
     --gray-700:#374151;
     --gray-900:#111827;
     --red-50:#FEF2F2;
+    --red-300:#FCA5A5;
     --red-400:#F87171;
     --red-500:#EF4444;
     --red-700:#B91C1C;
@@ -32,7 +33,7 @@ export default createGlobalStyle`
   }
 
   body{
-    background: var(--light-background);
+    background: var(--gray-200);
   }
 
   body, input, textarea, button {

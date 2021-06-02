@@ -1,11 +1,9 @@
-import React, { ReactNode, useContext } from 'react'
+import React, { useContext } from 'react'
 import { ActionContext } from '../../contexts/ActionContext'
 
 import { ActiveButton, Container, NotActiveButton } from './styles'
 
-interface SubHeaderProps {}
-
-function SubHeader(props: SubHeaderProps) {
+function SubHeader() {
   const { button, add, show } = useContext(ActionContext)
 
   return (

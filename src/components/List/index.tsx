@@ -3,7 +3,6 @@ import { ActionContext } from '../../contexts/ActionContext'
 import { Container } from './styles'
 
 interface IUser {
-  id: string
   name: string
   age: number
   maritalStatus: number
@@ -13,9 +12,16 @@ interface IUser {
 }
 
 function List() {
-  const { users } = useContext(ActionContext)
-  const [initialQuantityScreen, setInitialQuantityScreen] = useState(0)
-  const [endQuantityScreen, setEndQuantityScreen] = useState(0)
+  const { users, update } = useContext(ActionContext)
+  const [initialQuantityScreen, setInitialQuantityScreen] = useState(
+    users.length !== 0 ? 1 : 0
+  )
+  const [endQuantityScreen, setEndQuantityScreen] = useState(
+    users.length !== 0 ? (users.length > 6 ? 6 : users.length) : 0
+  )
+
+  const setNextPage = () => {}
+  const setPreviousPage = () => {}
 
   return (
     <Container>
@@ -34,23 +40,24 @@ function List() {
               </tr>
             </thead>
             <tbody>
+              {console.log(initialQuantityScreen)}
               {users.length > 0 ? (
                 users.map(user => (
                   <tr key={user.id}>
                     <td>{user.name}</td>
                     <td>{user.age}</td>
-                    <td>{user.maritalStatus}</td>
+                    <td>{user.marialStatus}</td>
                     <td>{user.cpf}</td>
                     <td>{user.city}</td>
                     <td>{user.state}</td>
                     <td>
-                      <button>Editar</button>
+                      <button onClick={() => update(user)}>Editar</button>
                     </td>
                   </tr>
                 ))
               ) : (
                 <tr>
-                  <td colSpan={3}>Sem Pessoas Cadastradas</td>
+                  <td colSpan={7}>Sem Pessoas Cadastradas</td>
                 </tr>
               )}
             </tbody>
@@ -61,8 +68,8 @@ function List() {
               {users.length} resultados
             </div>
             <div>
-              <button>Anterior</button>
-              <button>Próximo</button>
+              <button onClick={setNextPage}>Anterior</button>
+              <button onClick={setPreviousPage}>Próximo</button>
             </div>
           </div>
         </div>

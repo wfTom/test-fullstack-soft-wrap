@@ -1,0 +1,16 @@
+GET https://api-656cf-default-rtdb.firebaseio.com/users.json
+//rota index, listagem de todos os registros
+
+###
+
+POST https://api-656cf-default-rtdb.firebaseio.com/users.json
+Content-Type: application/json
+
+{
+  "name": "teste2",
+  "age": "20",
+  "marialStatus": "Solteiro(a)",
+  "cpf": "388.273.420-52",
+  "state": "São Paulo",
+  "city": "Presidente Prudente"
+}
