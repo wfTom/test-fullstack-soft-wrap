@@ -7,7 +7,7 @@
       <img alt="Wellington Barros" src="https://img.shields.io/badge/-Wellington%20Barros-8257E5?style=flat&logo=Linkedin&logoColor=white" />
    </a>
   <a aria-label="Completed" href="mailto:wf_tom@hotmail.com.br?subject=GitHub%20repo%20Teste%20Dev%20FullStack">
-    <img src="https://img.shields.io/badge/-Fale%20Comigo8257E5?style=flat&logoColor=white"></img>
+    <img src="https://img.shields.io/badge/-FaleComigo8257E5?style=flat&logoColor=white"></img>
   </a>
 </p>
 
