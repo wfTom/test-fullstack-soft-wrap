@@ -2,14 +2,14 @@ import { useContext, useState } from 'react'
 import { ActionContext } from '../../contexts/ActionContext'
 import { Container } from './styles'
 
-interface IUser {
-  name: string
-  age: number
-  maritalStatus: number
-  cpf: string
-  state: string
-  city: string
-}
+// interface IUser {
+//   name: string
+//   age: number
+//   maritalStatus: number
+//   cpf: string
+//   state: string
+//   city: string
+// }
 
 function List() {
   const { users, update } = useContext(ActionContext)
@@ -40,7 +40,6 @@ function List() {
               </tr>
             </thead>
             <tbody>
-              {console.log(initialQuantityScreen)}
               {users.length > 0 ? (
                 users.map(user => (
                   <tr key={user.id}>

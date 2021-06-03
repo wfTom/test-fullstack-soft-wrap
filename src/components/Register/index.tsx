@@ -132,7 +132,7 @@ function Register() {
     if (marialStatus == '') {
       error = true
       setMarialStatusError(errorColor)
-      errors.push('Campo Cidade é obrigatório')
+      errors.push('Campo Estado Civil é obrigatório')
     } else {
       setMarialStatusError('')
     }
@@ -141,8 +141,6 @@ function Register() {
       setCPFError(errorColor)
       errors.push('Campo CPF é obrigatório')
     } else {
-      console.log(cpf)
-      console.log(validateCPFNumber())
       if (!validateCPFNumber()) {
         errors.push('CPF inválido')
         setCPFError(errorColor)
@@ -165,7 +163,7 @@ function Register() {
     if (state == '') {
       error = true
       setStateError(errorColor)
-      errors.push('Campo Cidade é obrigatório')
+      errors.push('Campo Estado é obrigatório')
     } else {
       setStateError('')
     }
