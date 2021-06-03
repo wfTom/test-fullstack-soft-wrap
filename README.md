@@ -5,9 +5,9 @@
 <p align="center">
    <a href="https://www.linkedin.com/in/wellington-barros-593ba0137/">
       <img alt="Wellington Barros" src="https://img.shields.io/badge/-Wellington%20Barros-8257E5?style=flat&logo=Linkedin&logoColor=white" />
-   </a>stack
+   </a>
   <a aria-label="Completed" href="mailto:wf_tom@hotmail.com.br?subject=GitHub%20repo%20Teste%20Dev%20FullStack">
-    <img src="https://img.shields.io/badge/-Fale-comigo8257E5?style=flat&logoColor=white"></img>
+    <img src="https://img.shields.io/badge/-Fale%20Comigo8257E5?style=flat&logoColor=white"></img>
   </a>
 </p>
 
@@ -41,8 +41,7 @@ Vou verificar se posso disponibilizar os protótipos.
 
 # :eyes: Demo Website
 
-Você pode acessar o site em:
-👉 demo: https://teste-front-end-wftom.vercel.app/
+Você pode acessar o site demo em: https://teste-front-end-wftom.vercel.app/
 
 # :computer: Tecnologias
 
